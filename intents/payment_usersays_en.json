@@ -1,0 +1,16 @@
+[
+  {
+    "id": "eb8ba743-536d-44a1-b75f-07373e5c85e4",
+    "data": [
+      {
+        "text": "payment",
+        "alias": "category",
+        "meta": "@category",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1517567678
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "id": "f4764124-f735-4cd1-a7f4-95a3d74d70fe",
+  "name": "raise_incident",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "raise_incident-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "customizeAudio": true,
+          "textToSpeech": "Thats fine,please select a category from the options",
+          "displayText": "Ok..Please select a category"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "Bus Schedule"
+            },
+            {
+              "title": "Quality of Service"
+            },
+            {
+              "title": "Payment related"
+            }
+          ]
+        },
+        {
+          "type": 4,
+          "platform": "slack",
+          "lang": "en",
+          "payload": {
+            "slack": {
+              "text": "",
+              "attachments": [
+                {
+                  "text": "Please select a category below",
+                  "fallback": "If you could read this message, you\u0027d be choosing something fun to do right now.",
+                  "color": "#3AA3E3",
+                  "attachment_type": "default",
+                  "callback_id": "category",
+                  "actions": [
+                    {
+                      "name": "category",
+                      "text": "Pick a game...",
+                      "type": "select",
+                      "options": [
+                        {
+                          "text": "Bus schedule",
+                          "value": "bus schedule"
+                        },
+                        {
+                          "text": "Quality of Service",
+                          "value": "quality of service"
+                        },
+                        {
+                          "text": "Payment related",
+                          "value": "payment"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "Please select a category from below"
+        },
+        {
+          "type": 4,
+          "platform": "facebook",
+          "lang": "en",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "template_type": "list",
+                  "top_element_style": "compact",
+                  "elements": [
+                    {
+                      "title": "Bus Schedule",
+                      "image_url": "https://cdn2.iconfinder.com/data/icons/travel-set-2/512/18-512.png",
+                      "subtitle": "Category for bus\u0027s schedule related queries",
+                      "buttons": [
+                        {
+                          "title": "Select",
+                          "type": "postback",
+                          "payload": "schedule"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Quality of Service",
+                      "image_url": "https://www.hbs.edu/mba/PublishingImages/icon-handshake.png",
+                      "subtitle": "Category for our service quality related queries",
+                      "buttons": [
+                        {
+                          "type": "postback",
+                          "title": "Select",
+                          "payload": "quality of service"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Payment related",
+                      "image_url": "https://www.rupay.co.in/sites/all/themes/rupay/images/cashback.png",
+                      "subtitle": "Category for all payment related queries",
+                      "buttons": [
+                        {
+                          "type": "postback",
+                          "title": "Select",
+                          "payload": "payment"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1519122342,
+  "fallbackIntent": false,
+  "events": []
+}

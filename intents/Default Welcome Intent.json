@@ -1,0 +1,108 @@
+{
+  "id": "47113add-f328-4387-b060-62e301fc172b",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Hi,Welcome to Pioneer Travels ServiceNow. Select an option to continue"
+        },
+        {
+          "type": "basic_card",
+          "platform": "google",
+          "lang": "en",
+          "title": "Wellcome",
+          "subtitle": "Welcome",
+          "image": {
+            "url": "https://content1.jdmagicbox.com/comp/navi-mumbai/69/022pk025969/catalogue/pioneer-travels-cbd-belapur-navi-mumbai-overseas-placement-services-candidate-18uec0t.jpg"
+          },
+          "buttons": []
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "Raise a complaint"
+            },
+            {
+              "title": "Complaint Status"
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Hi,Welcome to Pioneer Travels ServiceNow. Choose an option to continue",
+          "replies": [
+            "Raise a complaint",
+            "Complaint Status"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Hi,Welcome to Pioneer Travels ServiceNow. Choose an option to continue",
+          "replies": [
+            "Raise a complaint",
+            "Complaint Status"
+          ]
+        },
+        {
+          "type": 4,
+          "platform": "facebook",
+          "lang": "en",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "template_type": "button",
+                  "text": "Login to your account first!",
+                  "buttons": [
+                    {
+                      "type": "account_link",
+                      "url": "https://pioneertravels-servicenow.herokuapp.com/login.html"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true,
+        "slack": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1519908921,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

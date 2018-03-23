@@ -1,0 +1,20 @@
+[
+  {
+    "id": "644a841a-24dc-4d47-b1a4-72b7aadc703e",
+    "data": [
+      {
+        "text": "Quality",
+        "alias": "category",
+        "meta": "@category",
+        "userDefined": true
+      },
+      {
+        "text": " of Service",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1518686418
+  }
+]

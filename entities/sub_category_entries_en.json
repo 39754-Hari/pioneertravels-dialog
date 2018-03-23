@@ -1,0 +1,45 @@
+[
+  {
+    "value": "failedpayment",
+    "synonyms": [
+      "failedpayment",
+      "payment_failed"
+    ]
+  },
+  {
+    "value": "food/hospitality",
+    "synonyms": [
+      "food/hospitality",
+      "food",
+      "hospitality"
+    ]
+  },
+  {
+    "value": "arrival/departure",
+    "synonyms": [
+      "arrival/departure",
+      "Late schedule",
+      "departure",
+      "arrival"
+    ]
+  },
+  {
+    "value": "boardingpoint",
+    "synonyms": [
+      "boardingpoint",
+      "Boarding Point"
+    ]
+  },
+  {
+    "value": "maintenance",
+    "synonyms": [
+      "maintenance"
+    ]
+  },
+  {
+    "value": "refund",
+    "synonyms": [
+      "refund"
+    ]
+  }
+]

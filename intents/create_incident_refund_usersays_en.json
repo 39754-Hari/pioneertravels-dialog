@@ -1,0 +1,16 @@
+[
+  {
+    "id": "4cd11e25-550a-4481-8551-f4265605cb21",
+    "data": [
+      {
+        "text": "refund",
+        "alias": "sub_category",
+        "meta": "@sub_category",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 4,
+    "updated": 1517568378
+  }
+]

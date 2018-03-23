@@ -1,0 +1,48 @@
+{
+  "id": "0d6d2355-8050-4c15-a025-063727c0c7ba",
+  "name": "final_intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "speech": "Thank you for using Pioneer Travels ServiceNow! Have a great day.!"
+        },
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Thank you for using Pioneer Travels ServiceNow! Have a great day.!"
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "Thank you for using Pioneer Travels ServiceNow! Have a great day.!"
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1519035606,
+  "fallbackIntent": false,
+  "events": []
+}

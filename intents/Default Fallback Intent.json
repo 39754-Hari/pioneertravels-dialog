@@ -1,0 +1,70 @@
+{
+  "id": "e956c5e1-3e6b-4901-840f-dc570234a3a4",
+  "name": "Default Fallback Intent",
+  "auto": false,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "I couldn\u0027t understand that, but I can help you with these things"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "Raise a complaint"
+            },
+            {
+              "title": "Complaint Status"
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "platform": "slack",
+          "lang": "en",
+          "title": "I couldn\u0027t understand that, though I can help you with these things",
+          "replies": [
+            "Raise a complaint",
+            "Complaint Status"
+          ]
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "I couldn\u0027t understand that, though I can help you with these things",
+          "replies": [
+            "Raise a complaint",
+            "Complaint Status"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518590755,
+  "fallbackIntent": true,
+  "events": []
+}

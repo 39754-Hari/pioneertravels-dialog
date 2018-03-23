@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2c6a2ddb-c751-4f6e-bae2-49a6032fb116",
+    "data": [
+      {
+        "text": "Bus ",
+        "userDefined": false
+      },
+      {
+        "text": "Schedule",
+        "alias": "category",
+        "meta": "@category",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1518594137
+  },
+  {
+    "id": "ff4251e0-cf63-46ab-b293-cf0835a6e876",
+    "data": [
+      {
+        "text": "Schedule",
+        "alias": "category",
+        "meta": "@category",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1518594137
+  }
+]

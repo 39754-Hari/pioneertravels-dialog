@@ -1,0 +1,16 @@
+[
+  {
+    "id": "cce0841f-6db5-4506-8c19-6846300267a8",
+    "data": [
+      {
+        "text": "Food/Hospitality",
+        "alias": "sub_category",
+        "meta": "@sub_category",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1517567112
+  }
+]

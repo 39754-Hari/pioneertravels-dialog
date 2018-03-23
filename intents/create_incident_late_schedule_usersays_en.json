@@ -1,0 +1,15 @@
+[
+  {
+    "id": "a6487b4a-6eca-4a09-833b-33ff1290d00d",
+    "data": [
+      {
+        "text": "arrival/departure",
+        "alias": "sub_category",
+        "meta": "@sub_category",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

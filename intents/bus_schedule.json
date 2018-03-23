@@ -1,0 +1,137 @@
+{
+  "id": "35396b4d-25f5-49c3-9d3d-1f49a2a339fb",
+  "name": "bus_schedule",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "bus_schedule",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "454878cd-2360-475b-a58b-b4b421cda950",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "$category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Please select a sub category"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "arrival/departure"
+            },
+            {
+              "title": "boardingpoint"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category : Late Arrival/Departure",
+          "subtitle": "Please choose this category if the incident related to scheduled departure/arrival.",
+          "imageUrl": "",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "arrival/departure"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category :Boarding Point",
+          "subtitle": "Please choose this category if the incident related to boarding points",
+          "imageUrl": "",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "boardingpoint"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category : Late Arrival/Departure",
+          "subtitle": "Please choose this category if the incident related to scheduled departure/arrival.",
+          "imageUrl": "http://www.lafemmenikitha.com/wp-content/uploads/2016/03/late_clock.png",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "arrival/departure"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category :Boarding Point",
+          "subtitle": "Please choose this category if the incident related to boarding points",
+          "imageUrl": "https://png.pngtree.com/element_origin_min_pic/17/03/23/e53521c6b75fd9ed04903ee43f250ed9.jpg",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "boardingpoint"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518594137,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_OPTION"
+    }
+  ]
+}

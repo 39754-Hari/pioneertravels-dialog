@@ -1,0 +1,15 @@
+[
+  {
+    "id": "881b5954-38c7-451e-827c-35e393c113bb",
+    "data": [
+      {
+        "text": "boardingpoint",
+        "alias": "sub_category",
+        "meta": "@sub_category",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "id": "c11c8e40-920a-4b18-a793-6f54548f4f34",
+  "name": "quality_of_service",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "quality_of_service",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "44872af0-51b9-40dc-9619-4241d310b9fb",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "$category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Please select a sub category"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "Maintenance"
+            },
+            {
+              "title": "Food/Hospitality"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category : Maintenance/Cleanliness",
+          "subtitle": "Please choose this category if the incident related to bus maintenance/interior clean",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "maintenance"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category : Food/Hospitality",
+          "subtitle": "Please choose this category if the incident related to our food provided or other hospitality issues",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "food/hospitality"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category : Maintenance/Cleanliness",
+          "subtitle": "Please choose this category if the incident related to bus maintenance/interior clean",
+          "imageUrl": "https://d2oc0ihd6a5bt.cloudfront.net/wp-content/uploads/sites/2299/2017/05/pm_program.png",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "maintenance"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category : Food/Hospitality",
+          "subtitle": "Please choose this category if the incident related to our food provided or other hospitality issues",
+          "imageUrl": "https://cdn.onlinewebfonts.com/svg/img_19509.png",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "food/hospitality"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518686418,
+  "fallbackIntent": false,
+  "events": []
+}

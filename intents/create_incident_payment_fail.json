@@ -1,0 +1,110 @@
+{
+  "id": "82233e09-3792-4156-9870-e684620c47e3",
+  "name": "create_incident_payment_fail",
+  "auto": true,
+  "contexts": [
+    "payment"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "create_incident_payment_fail",
+      "affectedContexts": [
+        {
+          "name": "payment",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "af4727e2-91eb-41f2-9c79-a54766d874cd",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "userName",
+          "value": "$userName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your name to proceed"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "b9c6495c-65fc-4450-98d0-07a3e6c1fe2f",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phoneNumber",
+          "value": "$phoneNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your phone number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "aaaebef2-cb18-4a15-b533-92da2af8612d",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "transactionNumber",
+          "value": "$transactionNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your transaction number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "dc18e2be-9547-49b6-85ad-7e669f24264c",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "issueDescription",
+          "value": "$issueDescription",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your issue description in detail"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "33d47689-bbe7-4b7e-91bd-129021f5cf2f",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "#payment.category",
+          "isList": false
+        },
+        {
+          "id": "9e2ead8d-d97b-4e10-bbb0-d44e18c6dc09",
+          "required": true,
+          "dataType": "@sub_category",
+          "name": "sub_category",
+          "value": "$sub_category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518523223,
+  "fallbackIntent": false,
+  "events": []
+}

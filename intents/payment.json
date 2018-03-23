@@ -1,0 +1,130 @@
+{
+  "id": "690582bf-d9c5-4456-a549-99ffaeacb9c4",
+  "name": "payment",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "payment",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "09860bf8-3d57-44b9-9b16-56479f57cbcb",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "$category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Please select a sub category"
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "Failedpayment"
+            },
+            {
+              "title": "Refund"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category : Failure payment",
+          "subtitle": "Please choose this category if the incident related to failed payment",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "failedpayment"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "lang": "en",
+          "title": "Sub-Category : Refund",
+          "subtitle": "Please choose this category if the incident related to refund for cancelled booking",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "refund"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "Please select a sub category from below"
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category : Failure payment",
+          "subtitle": "Please choose this category if the incident related to failed payment",
+          "imageUrl": "https://www.paidmembershipspro.com/wp-content/uploads/2017/07/Failed-Payment-Limit.png",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "failedpayment"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "Sub-Category : Refund",
+          "subtitle": "Please choose this category if the incident related to refund for cancelled booking",
+          "imageUrl": "https://cdn2.iconfinder.com/data/icons/euro-corporative/512/bank_finance_cash_dollar_purchase_money_transfer_buy_v2_euro_european-256.png",
+          "buttons": [
+            {
+              "text": "Select",
+              "postback": "refund"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518518691,
+  "fallbackIntent": false,
+  "events": []
+}

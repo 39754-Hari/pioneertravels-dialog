@@ -1,0 +1,96 @@
+{
+  "id": "f8ed5732-aae4-49b7-b73c-8aff03c5dcde",
+  "name": "create_incident_maintenance",
+  "auto": true,
+  "contexts": [
+    "quality_of_service"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "create_incident_maintenance",
+      "affectedContexts": [
+        {
+          "name": "quality_of_service",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "245e385b-cbc4-486f-a509-337260daefc4",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "userName",
+          "value": "$userName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your name to proceed"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "e9430490-ef7d-43bf-bfcd-a73ba49e8461",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phoneNumber",
+          "value": "$phoneNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your phone number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "707538cb-5a3e-4003-b7d3-cfe7ce3c2c27",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "issueDescription",
+          "value": "$issueDescription",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your issue description in detail"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "492c1605-9521-4ce4-a36d-e2741a0e171c",
+          "required": true,
+          "dataType": "@sub_category",
+          "name": "sub_category",
+          "value": "$sub_category",
+          "isList": false
+        },
+        {
+          "id": "986b44f0-e708-4045-8c0b-cc342daa03b5",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "#quality_of_service.category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518523211,
+  "fallbackIntent": false,
+  "events": []
+}

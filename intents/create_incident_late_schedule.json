@@ -1,0 +1,96 @@
+{
+  "id": "a731c4fd-3998-466e-b408-0da42172578b",
+  "name": "create_incident_late_schedule",
+  "auto": true,
+  "contexts": [
+    "bus_schedule"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "create_incident_late_schedule",
+      "affectedContexts": [
+        {
+          "name": "bus_schedule",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "fc8db14e-0143-4357-b4f1-6b8298a03122",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "userName",
+          "value": "$userName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your name to proceed"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "5dcddcf3-0800-444a-b923-ad0138a0e05d",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phoneNumber",
+          "value": "$phoneNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your phone number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "56bb9413-301c-48a4-9e3c-1ffc3bd100d7",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "issueDescription",
+          "value": "$issueDescription",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your issue description in detail"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "3e5a6fac-6232-4157-95a8-1e22b90a58c3",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "#bus_schedule.category",
+          "isList": false
+        },
+        {
+          "id": "97a974ad-e4e3-421f-b19a-169a2e665a0c",
+          "required": true,
+          "dataType": "@sub_category",
+          "name": "sub_category",
+          "value": "$sub_category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Your name : $userName,phone : $phoneNumber, date of travel : $date, bus number : $busNumber , issue : $issueDescription"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518523194,
+  "fallbackIntent": false,
+  "events": []
+}

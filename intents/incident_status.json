@@ -1,0 +1,52 @@
+{
+  "id": "95840ba4-d8f2-41a8-a1b1-8784eeae1600",
+  "name": "incident_status",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "incident_status",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6a4c56cc-90ed-4f40-8b0c-3b35b8e7fb1c",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "incidentId",
+          "value": "$incidentId",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your incident id to get the status"
+            },
+            {
+              "lang": "en",
+              "value": "Enter your incident id"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518518265,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "event_status"
+    }
+  ]
+}

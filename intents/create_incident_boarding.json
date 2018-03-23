@@ -1,0 +1,96 @@
+{
+  "id": "6c01d723-7aa1-4b5d-9d31-18b9a3aa410a",
+  "name": "create_incident_boarding",
+  "auto": true,
+  "contexts": [
+    "bus_schedule"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "create_incident_boarding",
+      "affectedContexts": [
+        {
+          "name": "bus_schedule",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "aa851336-8100-4996-847a-72e23ea2d6fd",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "userName",
+          "value": "$userName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your name to proceed"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "0011accd-77ad-4794-bb1d-8329501ff331",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phoneNumber",
+          "value": "$phoneNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your phone number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "5544f140-cd2d-4269-a425-d396ccac739d",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "issueDescription",
+          "value": "$issueDescription",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your issue description in detail"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "b060526f-dca9-4e5e-86df-244395c18f02",
+          "required": true,
+          "dataType": "@sub_category",
+          "name": "sub_category",
+          "value": "$sub_category",
+          "isList": false
+        },
+        {
+          "id": "cade862a-df17-4447-b2f4-55a2ae7d1ed7",
+          "required": true,
+          "dataType": "@category",
+          "name": "category",
+          "value": "#bus_schedule.category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518523169,
+  "fallbackIntent": false,
+  "events": []
+}

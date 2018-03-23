@@ -1,0 +1,52 @@
+[
+  {
+    "id": "8080e35d-db20-4697-a590-0ac1043b23b9",
+    "data": [
+      {
+        "text": "buu was not clean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "147e726f-3e52-460e-9b72-5ac6bae62e4a",
+    "data": [
+      {
+        "text": "bus was not clean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "87b67710-364f-4663-96c0-9466f4476b8d",
+    "data": [
+      {
+        "text": "maintenance",
+        "alias": "sub_category",
+        "meta": "@sub_category",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1517566314
+  },
+  {
+    "id": "2c9b2cf5-a3fc-4999-bcaf-7ed1021d5548",
+    "data": [
+      {
+        "text": "bus breakdown",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

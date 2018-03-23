@@ -1,0 +1,23 @@
+[
+  {
+    "value": "payment",
+    "synonyms": [
+      "payment",
+      "Payment related"
+    ]
+  },
+  {
+    "value": "quality",
+    "synonyms": [
+      "quality",
+      "Quality of Service"
+    ]
+  },
+  {
+    "value": "schedule",
+    "synonyms": [
+      "schedule",
+      "Arrival/Departure"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "9171d213-f554-4e11-93af-0748c6cd5ffa",
+  "name": "happy_emojies",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "speech": "I\u0027m happy to see that ☺️"
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "I\u0027m happy to see that ☺️"
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "I\u0027m happy to see that ☺️"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1518076245,
+  "fallbackIntent": false,
+  "events": []
+}
